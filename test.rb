@@ -1,7 +1,7 @@
 require 'filewatcher'
 
-FileWatcher.new(["/home/darklight/Desktop/"]).watch() do |filename, event|
+FileWatcher.new(["DIRECTORY/TO/WATCH"]).watch() do |filename, event|
   if(event == :new)
-    system("sh /home/darklight/Desktop/DarkLight_*")
+    # What the system does
   end
 end
